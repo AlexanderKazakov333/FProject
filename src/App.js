@@ -1,21 +1,21 @@
 import './App.css';
 import { instance } from './API/API';
 import axios from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
   const [data, setData] = useState([])
-  // console.log(data);
+  console.log(data);
+
+  useEffect(() => {
+    baseURL()
+  }, [])
 
   const baseURL = async () => {
-    
-    
-
     try{
-      const response = await axios.get('https://realty-ggcv.onrender.com')
-      console.log(response);
-      // setData(response)
+      const response = await axios.get('https://realty-ggcv.onrender.com/main/flats/')
+      setData(response.data)
     }
     catch (e) {
       console.log(e);
@@ -23,10 +23,9 @@ function App() {
   }
 
 
-
   return (
     <div className="App">
-      <button onClick={baseURL}>123</button>
+
     </div>
   );
 }
