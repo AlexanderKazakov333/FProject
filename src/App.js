@@ -1,31 +1,20 @@
 import './App.css';
-import { instance } from './API/API';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Main from './components/FirstPage/Main/Main';
+import AboutUsPage from './components/AboutUsPage/AboutUsPage';
+import DetaildeRoomPage from './components/DeatailedRoomPage/DetaildeRoomPage';
 
 function App() {
 
-  const [data, setData] = useState([])
-  console.log(data);
-
-  useEffect(() => {
-    baseURL()
-  }, [])
-
-  const baseURL = async () => {
-    try{
-      const response = await axios.get('https://realty-ggcv.onrender.com/main/flats/')
-      setData(response.data)
-    }
-    catch (e) {
-      console.log(e);
-    }
-  }
 
 
   return (
     <div className="App">
-
+      <Routes>
+        <Route exact path='/' element={<Main />}  />
+        <Route exact path='/aboutUs' element={<AboutUsPage />}  />
+        <Route exact path='/detailed' element={<DetaildeRoomPage />}  />
+      </Routes>
     </div>
   );
 }
