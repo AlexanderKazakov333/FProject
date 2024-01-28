@@ -1,0 +1,16 @@
+.underphoto{
+    width: 300px;
+    height: 300px;
+}
+
+.card{
+    border: 1px solid rgb(201, 201, 201);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.price-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

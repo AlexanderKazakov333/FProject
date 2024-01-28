@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState } from 'react';
-import { baseURL } from "../../../BaseURL/BaseURL";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import { baseURL } from "../../BaseURL/BaseURL";
+import Card from "../../components/Card/Card";
+import './Main.css'
 
 
 const Main = () => {
@@ -21,9 +21,20 @@ const Main = () => {
     })();
   }, []);
   return <div>
-    <Header />
-    <div>Main</div>
-    <Footer />
+
+    <h1>Popular Properties</h1>
+    
+    <div className="card-grid">
+      {data.map((item, idx) => {
+        return (
+          <Card 
+            key={idx}
+            item={item}
+          />
+        )
+      })}
+    </div>
+
   </div>;
 };
 

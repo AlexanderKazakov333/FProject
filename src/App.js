@@ -1,8 +1,11 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Main from './components/FirstPage/Main/Main';
-import AboutUsPage from './components/AboutUsPage/AboutUsPage';
-import DetaildeRoomPage from './components/DeatailedRoomPage/DetaildeRoomPage';
+import Main from './pages/MainPage/Main';
+import AboutUsPage from './pages/AboutUsPage/AboutUsPage'
+import DetaildeRoomPage from './pages/DetailPage/DetaildeRoomPage'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+
 
 function App() {
 
@@ -10,11 +13,13 @@ function App() {
 
   return (
     <div className="App">
-      <Routes>
-        <Route exact path='/' element={<Main />}  />
-        <Route exact path='/aboutUs' element={<AboutUsPage />}  />
-        <Route exact path='/detailed' element={<DetaildeRoomPage />}  />
-      </Routes>
+      <Header />
+        <Routes>
+          <Route exact path='/' element={<Main />}  />
+          <Route exact path='/aboutUs' element={<AboutUsPage />}  />
+          <Route exact path='/:id' element={<DetaildeRoomPage />}  />
+        </Routes>
+      <Footer />
     </div>
   );
 }
