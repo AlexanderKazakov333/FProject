@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { baseURL } from "../../BaseURL/BaseURL";
 import Card from "../../components/Card/Card";
 import './Main.css'
+import { partners } from "../../components/Partners/Partners";
+
 
 
 const Main = () => {
@@ -21,6 +23,12 @@ const Main = () => {
     })();
   }, []);
   return <div>
+
+    <h1>Our partners</h1>
+
+    <div className="partners">
+      {partners.map((item) =>   <img src={item.scr} alt="" /> )}
+    </div>
 
     <h1>Popular Properties</h1>
     
