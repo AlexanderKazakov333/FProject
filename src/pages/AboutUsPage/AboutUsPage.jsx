@@ -50,9 +50,7 @@ const AboutUsPage = () => {
           ) 
         })} 
         </div> 
- 
         </div> 
-         
       </div> 
     </div> 
   ) 

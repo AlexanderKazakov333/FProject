@@ -1,26 +1,23 @@
-import React from 'react'
-import { useParams } from "react-router-dom"; 
-import { getFlat } from '../../BaseURL/getFlat';
+import React from "react";
+import { useParams } from "react-router-dom";
+import { getFlat } from "../../BaseURL/getFlat";
 import { useEffect, useState } from "react";
 
-
 const DetaildeRoomPage = () => {
-
   const { id } = useParams();
   const [data, setData] = useState({});
-  const [isLoading, setIsLoading] = useState(false)
-  
+  const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     (async () => {
-      setIsLoading(true)
+      setIsLoading(true);
       try {
         const response = await getFlat(id);
         setData(response.data);
-    
       } catch (e) {
         console.log(e);
       } finally {
-        setIsLoading(false)
+        setIsLoading(false);
       }
     })();
   }, []);
@@ -29,20 +26,16 @@ const DetaildeRoomPage = () => {
 
   return (
     <div>
-      {isLoading ? 
-      <div>
-      Load....
-      </div>  
-      :
-
-      <>
-      <div>
-        {data?.title}
-      </div>
-      </>
-    }
+      {isLoading ? (
+        <div>Load....</div>
+      ) : (
+        <div>
+          {/* <img src={data.flat_images[0].image} alt="" /> */}
+          <div>{data?.title}</div>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default DetaildeRoomPage
+export default DetaildeRoomPage;

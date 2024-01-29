@@ -9,3 +9,22 @@
     display: flex;
     justify-content: space-around;
 }
+
+.big-picture{
+    display: flex;
+    justify-content: space-around;
+}
+
+.big-text-div{
+    width: 558px;
+}
+
+.big-text{
+    font-size: 61px;
+    text-align: left;
+}
+
+.popular-prop{
+    text-align: left;
+    margin-left: 6%;
+}
