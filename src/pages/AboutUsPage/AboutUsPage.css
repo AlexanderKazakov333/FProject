@@ -1,0 +1,79 @@
+.Header { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+
+    
+} 
+.logo { 
+    width: 250px; 
+    height: 65px; 
+} 
+.lishki { 
+    list-style: none; 
+    display: flex; 
+    font-family: Poppins; 
+    font-size: 16px; 
+    font-weight: 500; 
+    line-height: 24px; 
+    letter-spacing: 0em; 
+    text-align: left; 
+} 
+.li1 { 
+    padding: 0 50px ; 
+    cursor: pointer; 
+} 
+.li { 
+    padding: 0 50px ; 
+} 
+.menu { 
+    display: flex; 
+    justify-content: center; 
+} 
+.btn1 { 
+    width: 200px; 
+    height: 50px; 
+    background: #2E6EFF; 
+    border-color:#2E6EFF; 
+    border-radius: 10px; 
+    color: #fff; 
+} 
+.title { 
+    font-family: Poppins; 
+    font-size: 44px; 
+    font-weight: 600; 
+    line-height: 66px; 
+} 
+.text { 
+    font-family: Poppins; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    text-align: center; 
+} 
+.card-grid { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+.security { 
+    font-family: Poppins; 
+    font-size: 22px; 
+    font-weight: 600; 
+    line-height: 33px; 
+    letter-spacing: 0em; 
+    text-align: left; 
+} 
+.text { 
+    font-family: Poppins; 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    letter-spacing: 0em; 
+    text-align: left; 
+} 
+.img {  
+    width: 400px; 
+    height: 666px; 
+    border-radius: 10px; 
+}
