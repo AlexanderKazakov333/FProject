@@ -2,7 +2,7 @@
     display: flex; 
     align-items: center; 
     justify-content: space-around; 
-    
+    width: 100%;
 } 
 .logo { 
     width: 250px; 
@@ -48,7 +48,6 @@
     font-size: 16px; 
     font-weight: 400; 
     line-height: 24px; 
-    text-align: center; 
 } 
 .card-grid2 { 
     display: flex; 
@@ -72,8 +71,15 @@
     text-align: left; 
 } 
 .img {  
-    width: 400px; 
+    width: 450px; 
     height: 666px; 
     border-radius: 10px; 
     margin: 0px 40px 0 40px;
+}
+.icon {
+    text-align: left;
+}
+.card2 {
+    padding: 10px 50px 10px;
+    text-align: left;
 }

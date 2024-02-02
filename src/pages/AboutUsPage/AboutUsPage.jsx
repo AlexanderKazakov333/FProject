@@ -3,8 +3,8 @@ import {aboutUs} from '../../components/AboutUsCard/CardAboutUs'
 import {aboutUs2} from '../../components/AboutUsCard/CardAboutUs' 
 import img from '../../assets/AboutUsFoto.svg' 
 import '../../pages/AboutUsPage/AboutUsPage.css' 
- 
- 
+
+
 const AboutUsPage = () => { 
 
 
@@ -20,9 +20,9 @@ const AboutUsPage = () => {
         return( 
             <div key={idx}> 
                 <div> 
-                    <div className='card'> 
-                        <img className='icon' src={item.icon} alt="" /> 
-                        <h2 className='icon'>{item.security}</h2> 
+                    <div className='card2'> 
+                        <div><img className='icon' src={item.icon} alt="" /> </div>
+                        <h2 className='review'>{item.security}</h2> 
                         <span className='text'>{item.text}</span> 
                     </div> 
                 </div> 
@@ -40,9 +40,9 @@ const AboutUsPage = () => {
         return( 
             <div key={idx}> 
               <div> 
-                <div className='card'> 
-                  <img className='icon' src={item.icon} alt="" /> 
-                  <h2 className='icon'>{item.security}</h2> 
+                <div className='card2'> 
+                  <div><img className='icon' src={item.icon} alt="" /> </div>
+                  <h2 className='review'>{item.security}</h2> 
                   <span className='text'>{item.text}</span> 
                 </div> 
               </div> 
