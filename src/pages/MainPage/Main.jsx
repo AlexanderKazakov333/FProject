@@ -30,7 +30,9 @@ const Main = () => {
             Find the perfect place to stay with your family
           </h1>
         </div>
+        <div>
         <img src={Rectangle} alt="" />
+        </div>
       </div>
 
       <div>

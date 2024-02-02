@@ -27,11 +27,22 @@ const DetaildeRoomPage = () => {
   return (
     <div>
       {isLoading ? (
-        <div>Load....</div>
+        <div>Loading...</div>
       ) : (
         <div>
-          {/* <img src={data.flat_images[0].image} alt="" /> */}
-          <div>{data?.title}</div>
+          <div>
+            <div>{data?.title}</div>
+            <div>Район: {data?.district}</div>
+            <div>
+              Этаж: {data?.floor} из {data?.number_of_floors}
+            </div>
+            <div>Площадь: {data?.total_area}</div>
+            <div>Тип документа: {data?.document}</div>
+            <div>Состояние: {data?.condition}</div>
+            <div>Описание: {data?.description}</div>
+            <div>Цена: {data?.price} $</div>
+            <div>ID: {data?.id}</div>
+          </div>
         </div>
       )}
     </div>
