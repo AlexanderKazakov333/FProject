@@ -21,12 +21,12 @@ const Card = (props) => {
           <h3>{item.title}</h3>
           <span>Bishkek Kyrgyzstan</span>
           <div className='rooms-area'>
-            <span>Колво комнат: {item.rooms}</span>
-            <span>Площадь: {item.total_area}</span>
+            <div><span>Кол-во комнат: {item.rooms}</span></div>
+            <div><span>Площадь: {item.total_area}м</span></div>
           </div>
-          <div className='price-button'>
-            <h3>Цена: {item.price}</h3>
-            <button onClick={() => goToDetailRoom(item.id)}>View</button>
+          <div className='price-btn'>
+            <div className='price-button'><h3>Цена: {item.price}$</h3></div>
+            <div><button onClick={() => goToDetailRoom(item.id)}>View</button></div>
           </div>
        </div>
     </div>

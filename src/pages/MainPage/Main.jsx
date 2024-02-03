@@ -35,7 +35,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div>
+      <div className="part">
         <h1>Our partners</h1>
         <div className="partners">
           {partners.map((item, idx) => (

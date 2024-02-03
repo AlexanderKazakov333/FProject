@@ -1,19 +1,20 @@
-.underphoto{
+.underphoto {
     width: 362px;
     height: 321px;
     border-radius: 10px 10px 0px 0px;
 
 }
-
-.card{
+.card {
     border: 1px solid rgb(201, 201, 201);
     border-radius: 10px;
     width: 362px;
     margin: 0 auto;
 }
-
-.price-button{
+.price-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.price-button {
+    margin-right: 8px;
 }
