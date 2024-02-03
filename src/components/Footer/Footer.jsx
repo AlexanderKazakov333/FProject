@@ -10,6 +10,7 @@ import '../Footer/Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
+      
         <div className='footer-logo'>
           <img className='logo-footer' src={logo} alt="" /> 
           <span className='footer-text'>Contrary to popular is not simply random text. It has</span>
@@ -21,19 +22,20 @@ const Footer = () => {
               <img src={social5} alt="" />
           </div>
         </div>
+
         <div className='more'>
-          <div>
+          <div className='About'>
             <h2>About</h2>
             <ul>
             <li>Company</li>
-              <li>Team</li>
-              <li>Career</li>
-              <li>Blogs</li>
+            <li>Team</li>
+            <li>Career</li>
+            <li>Blogs</li>
               
             </ul>
           </div>
 
-          <div>
+          <div className='Products'>
             <h2>Products</h2>
             <ul>
               <li>E-Books</li>
@@ -43,7 +45,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className='Address'>
             <h2>Address</h2>
             <ul>
               <li>Country Delevery</li>
