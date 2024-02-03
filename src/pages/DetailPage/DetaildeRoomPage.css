@@ -4,8 +4,13 @@
 
 .detailed-text{
     width: 50%;
+    text-align: left;
 }
 
 .detailed-photo{
     width: 50%;
+}
+
+.title{
+    font-size: 30px;
 }

@@ -20,6 +20,7 @@ const Swiper = ({items}) => {
             slideInterval={4000}
             showBullets
             showIndex
+            showPlayButton={false}
         />
 
         
