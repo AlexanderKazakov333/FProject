@@ -5,6 +5,8 @@
 .detailed-text{
     width: 50%;
     text-align: left;
+    line-height: 2;
+    margin-left: 20px;
 }
 
 .detailed-photo{
@@ -13,4 +15,8 @@
 
 .title{
     font-size: 30px;
+}
+
+.other-about{
+    font-size: 20px;
 }

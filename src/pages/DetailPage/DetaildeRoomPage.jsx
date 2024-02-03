@@ -38,7 +38,7 @@ const DetaildeRoomPage = () => {
             />
             </div>
             <div className="detailed-text">
-            <div className="title">{data?.title}</div>
+            <div className="title">{data.title}</div>
             <div className="other-about">Район: {data?.district}</div>
             <div className="other-about">
               Этаж: {data?.floor} из {data?.number_of_floors}

@@ -1,10 +1,13 @@
 .image-gallery-thumbnail {
-    width: 100px;
+    width: 120px;
 }
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
-    width: 500px;
-    height: 300px;
+    /* width: 500px;
+    height: 300px; */
+    width: 50%;
+    /* height: 100%; */
+    margin-top: 20px;
 }
 
 .image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {

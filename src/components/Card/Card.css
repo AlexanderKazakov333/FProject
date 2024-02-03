@@ -9,8 +9,11 @@
     width: 362px;
     height: 553px;
     margin-bottom: 35px;
-    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: white;
 }
 
 .price-btn {
