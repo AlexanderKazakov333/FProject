@@ -1,0 +1,11 @@
+.detailed-text-photo{
+    display: flex;
+}
+
+.detailed-text{
+    width: 50%;
+}
+
+.detailed-photo{
+    width: 50%;
+}
