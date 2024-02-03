@@ -38,17 +38,17 @@ const DetaildeRoomPage = () => {
             />
             </div>
             <div className="detailed-text">
-            <div>{data?.title}</div>
-            <div>Район: {data?.district}</div>
-            <div>
+            <div className="title">{data?.title}</div>
+            <div className="other-about">Район: {data?.district}</div>
+            <div className="other-about">
               Этаж: {data?.floor} из {data?.number_of_floors}
             </div>
-            <div>Площадь: {data?.total_area}</div>
-            <div>Тип документа: {data?.document}</div>
-            <div>Состояние: {data?.condition}</div>
-            <div>Описание: {data?.description}</div>
-            <div>Цена: {data?.price} $</div>
-            <div>ID: {data?.id}</div>
+            <div className="other-about">Площадь: {data?.total_area}</div>
+            <div className="other-about">Тип документа: {data?.document}</div>
+            <div className="other-about">Состояние: {data?.condition}</div>
+            <div className="other-about">Описание: {data?.description}</div>
+            <div className="other-about">Цена: {data?.price} $</div>
+            <div className="other-about">ID: {data?.id}</div>
             </div>
         </div>
       )}
