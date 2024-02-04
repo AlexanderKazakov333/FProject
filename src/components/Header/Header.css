@@ -1,0 +1,21 @@
+.Header{
+    position: sticky; 
+    top: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.li1{
+    transition: 0.1s linear;
+}
+
+.li{
+    transition: 0.1s linear;
+}
+
+.li1:hover{
+    color: rgba(254, 117, 63, 1);
+}
+
+.li:hover{
+    color: rgba(254, 117, 63, 1);
+}

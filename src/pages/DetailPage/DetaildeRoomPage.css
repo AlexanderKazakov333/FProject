@@ -14,9 +14,26 @@
 }
 
 .title{
-    font-size: 30px;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .other-about{
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.button-div{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+
+.detailed-btn{
+    width: 135px;
+    height: 60px;
+    background: rgba(46, 110, 255, 1);
+    border-radius: 5px;
+    border: none;
+    color: white;
 }

@@ -22,15 +22,20 @@
 .big-text {
     font-size: 61px;
     text-align: left;
-    margin-top: 135px;
 }
 
 .popular-prop {
     text-align: left;
-    margin-left: 28px;
+    margin-left: 5%;
+    margin-bottom: 70px;
 }
 
 .part {
     margin-bottom: 85px;
     margin-top: 65px;
+}
+
+
+.our-partners{
+    margin-bottom: 4%;
 }

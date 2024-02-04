@@ -14,15 +14,51 @@
     margin: 0 auto;
     margin-bottom: 50px;
     background-color: white;
+    /* white-space: nowrap; */
 }
 
 .price-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    color: rgba(254, 117, 63, 1);
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .price-button {
     margin-right: 8px;
 }
 
+.real-button{
+    width: 138px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(46, 110, 255, 1);
+    color: white;
+}
+
+.rooms-area{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.geo-div{
+    /* display: flex; */
+}
+
+.geo{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.house-title{
+    font-size: 22px;
+    font-weight: 600;
+    height: 50px;
+}

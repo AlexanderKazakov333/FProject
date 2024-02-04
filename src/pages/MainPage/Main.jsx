@@ -36,7 +36,7 @@ const Main = () => {
       </div>
 
       <div className="part">
-        <h1>Our partners</h1>
+        <h1 className="our-partners">Our partners</h1>
         <div className="partners">
           {partners.map((item, idx) => (
             <div key={idx}>

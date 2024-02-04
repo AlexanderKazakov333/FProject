@@ -49,7 +49,9 @@ const DetaildeRoomPage = () => {
             <div className="other-about">Описание: {data?.description}</div>
             <div className="other-about">Цена: {data?.price} $</div>
             <div className="other-about">ID: {data?.id}</div>
-            <button>Контакты ёпта</button>
+            <div className="button-div">
+            <button className="detailed-btn">Контакты</button>
+            </div>
             </div>
         </div>
       )}
