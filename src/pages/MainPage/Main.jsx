@@ -4,7 +4,10 @@ import { baseURL } from "../../BaseURL/BaseURL";
 import Card from "../../components/Card/Card";
 import "./Main.css";
 import { partners } from "../../components/Partners/Partners";
+import { slider } from "../../components/Slider/SliderArray";
 import Rectangle from "../../assets/Rectangle.png";
+import Comments from "../../components/Comments/Commenst"
+import Slider from "../../components/Slider/Slider";
 
 const Main = () => {
   const [data, setData] = useState([]);
@@ -52,6 +55,10 @@ const Main = () => {
         {data.map((item, idx) => {
           return <Card key={idx} item={item} />;
         })}
+      </div>
+      <div>
+        <Comments />
+        <Slider />
       </div>
     </div>
   );

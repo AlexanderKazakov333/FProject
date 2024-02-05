@@ -1,0 +1,39 @@
+.slider-div{
+    border: 2px solid rgba(250, 102, 43, 0.1);
+    border-radius: 10px;
+}
+
+.card-comment{
+    padding: 20px;
+}
+
+.person-name-job{
+    display: block;
+    flex-direction: row;
+}
+
+.pre-slider-cont{
+    display: flex;
+}
+
+.slider-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slick-slide > div {
+    margin: 0 200px;
+}
+
+.slick-list{
+    margin: 0 -100px;
+}
+
+.person{
+    display: flex;    
+}
+
+.person-img{
+    margin-top: 20px;
+    margin-left: 20px;
+}
