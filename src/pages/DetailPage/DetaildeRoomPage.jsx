@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { getFlat } from "../../BaseURL/getFlat";
 import { useEffect, useState } from "react";
 import './DetaildeRoomPage.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const DetaildeRoomPage = () => {
   const { id } = useParams();
@@ -26,8 +28,16 @@ const DetaildeRoomPage = () => {
 
   console.log(data);
 
+
+  const Notify = () => {
+    toast("Гена Генадьевич Генадьев Телефон: 666-66-66-66", {
+      position: "bottom-right"
+    })
+  }
+
   return (
     <div>
+      <ToastContainer />
       {isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -50,7 +60,7 @@ const DetaildeRoomPage = () => {
             <div className="other-about">Цена: {data?.price} $</div>
             <div className="other-about">ID: {data?.id}</div>
             <div className="button-div">
-            <button className="detailed-btn">Контакты</button>
+            <button onClick={Notify} className="detailed-btn">Контакты</button>
             </div>
             </div>
         </div>
