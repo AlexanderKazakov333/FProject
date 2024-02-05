@@ -1,7 +1,27 @@
-.Header{
-    position: sticky; 
-    top: 0;
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(245, 245, 245);
+    width: 100%;
+    max-width: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.menu{
+    margin-right: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .li1{

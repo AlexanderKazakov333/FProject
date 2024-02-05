@@ -6,6 +6,8 @@
   pointer-events: none;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,4 +36,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(113, 113, 113);
+  border-radius: 10px;
 }

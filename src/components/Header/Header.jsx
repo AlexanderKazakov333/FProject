@@ -17,7 +17,7 @@ const Header = () => {
 
 
   return (
-    <div className='Header'> 
+    <div className='post-header'>
     <div> 
       <img className='logo' src={logo} alt="" />   
     </div> 
@@ -35,8 +35,8 @@ const Header = () => {
         </li> 
       </ul> 
       <button className='btn1'>+ добавить обьявление</button> 
-    </div> 
-  </div> 
+    </div>
+    </div>
   )
 }
 
