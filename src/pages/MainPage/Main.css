@@ -1,62 +1,60 @@
 .card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .partners {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .big-picture {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 7%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7%;
 }
-    
+
 .big-text-div {
-    width: 558px;
+  width: 558px;
 }
 
 .big-text {
-    font-size: 61px;
-    text-align: left;
+  font-size: 61px;
+  text-align: left;
 }
 
 .popular-prop {
-    text-align: left;
-    margin-left: 5%;
-    margin-bottom: 70px;
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 70px;
 }
 
 .part {
-    margin-bottom: 85px;
-    margin-top: 65px;
+  margin-bottom: 85px;
+  margin-top: 65px;
 }
 
-
-.our-partners{
-    margin-bottom: 4%;
+.our-partners {
+  margin-bottom: 4%;
 }
 
-.error-div{
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.error-div {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.alert{
-    width: 700px;
-    height: 50px;
-    font-size: 40px;
+.alert {
+  width: 700px;
+  height: 50px;
+  font-size: 40px;
 }
 
-.loading{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 9999;
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Alert from "@mui/material/Alert";
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 import { useEffect, useState } from "react";
 import { getFlats } from "../../URL/getFlats";
 import Card from "../../components/Card/Card";
@@ -11,6 +11,7 @@ import { slider } from "../../components/Slider/SliderArray";
 import Rectangle from "../../assets/Rectangle.png";
 import Comments from "../../components/Comments/Commenst";
 import Slider from "../../components/Slider/Slider";
+import { motion } from "framer-motion";
 
 const Main = () => {
   const [data, setData] = useState([]);
@@ -30,6 +31,7 @@ const Main = () => {
       }
     })();
   }, []);
+
   return (
     <div className="Main">
       {error && (
@@ -41,7 +43,7 @@ const Main = () => {
       )}
 
       {isLoading ? (
-        <div className="loading" >
+        <div className="loading">
           <Box sx={{ display: "flex" }}>
             <CircularProgress />
           </Box>
@@ -49,15 +51,25 @@ const Main = () => {
       ) : (
         <div>
           <div className="big-picture">
-            <div className="big-text-div">
+            <motion.div
+              className="big-text-div"
+              animate={{ x: 30 }}
+              transition={{ type: "spring", stiffness: 100 }}
+            >
               <h1 className="big-text">
                 Find the perfect place to stay with your family
               </h1>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              animate={{ x: -30 }}
+              transition={{ type: "spring", stiffness: 100 }}
+              exit={{ opacity: 0 }}
+            >
               <img src={Rectangle} alt="" />
-            </div>
+            </motion.div>
           </div>
+
+          <motion.div />
 
           <div className="part">
             <h1 className="our-partners">Our partners</h1>

@@ -1,37 +1,40 @@
 .image-gallery-thumbnail {
-    width: 120px;
+  width: 120px;
 }
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
-    /* width: 500px;
+  /* width: 500px;
     height: 300px; */
-    width: 50%;
-    /* height: 100%; */
-    margin-top: 20px;
+  width: 50%;
+  /* height: 100%; */
+  margin-top: 20px;
 }
 
-.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(218, 218, 218);
-    border-radius: 90px;
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 90px;
 }
 
 @media (min-width: 768px) {
-    .image-gallery-image.fullscreen {
-        height: 100vh;
-    }
+  .image-gallery-image.fullscreen {
+    height: 100vh;
+  }
 
-    /* Дополнительные стили для полноэкранного режима */
-    .image-gallery-thumbnails-container.fullscreen {
-        width: 100%; /* Изменяем ширину в полноэкранном режиме */
-    }
+  /* Дополнительные стили для полноэкранного режима */
+  .image-gallery-thumbnails-container.fullscreen {
+    width: 100%; /* Изменяем ширину в полноэкранном режиме */
+  }
 
-    .image-gallery-thumbnail.fullscreen .image-gallery-thumbnail-image {
-        height: 80px; /* Изменяем высоту миниатюр в полноэкранном режиме */
-    }
+  .image-gallery-thumbnail.fullscreen .image-gallery-thumbnail-image {
+    height: 80px; /* Изменяем высоту миниатюр в полноэкранном режиме */
+  }
 
-    .image-gallery-content.fullscreen .image-gallery-slide .image-gallery-image {
-        height: calc(100vh - 80px); /* Изменяем высоту изображения в полноэкранном режиме */
-    }
+  .image-gallery-content.fullscreen .image-gallery-slide .image-gallery-image {
+    height: calc(
+      100vh - 80px
+    ); /* Изменяем высоту изображения в полноэкранном режиме */
+  }
 }

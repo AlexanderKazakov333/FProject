@@ -1,42 +1,40 @@
-.slider-div{
-    border: 2px solid rgba(250, 102, 43, 0.1);
-    border-radius: 10px;
+.slider-div {
+  border: 2px solid rgba(250, 102, 43, 0.1);
+  border-radius: 10px;
 }
 
-
-.card-comment{
-    padding: 20px;
+.card-comment {
+  padding: 20px;
 }
 
-.person-name-job{
-    display: block;
-    flex-direction: row;
+.person-name-job {
+  display: block;
+  flex-direction: row;
 }
 
-.pre-slider-cont{
-    display: flex;
+.pre-slider-cont {
+  display: flex;
 }
 
-.slider-container{
-    width: 90%;
-    margin: 0 auto;
+.slider-container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .slick-slide > div {
-    /* margin: 0 200px; */
-    margin: 0 22%;
+  /* margin: 0 200px; */
+  margin: 0 22%;
 }
 
-.slick-list{
-    margin: 0 -3%;
+.slick-list {
+  margin: 0 -3%;
 }
 
-.person{
-    display: flex;    
+.person {
+  display: flex;
 }
 
-.person-img{
-    margin-top: 20px;
-    margin-left: 20px;
+.person-img {
+  margin-top: 20px;
+  margin-left: 20px;
 }
-

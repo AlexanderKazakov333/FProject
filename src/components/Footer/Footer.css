@@ -1,74 +1,73 @@
 .footer {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .footer-logo {
-    width: 250px;
-    height: 100px;
-    padding: 50px;
-    text-align: left;
+  width: 250px;
+  height: 100px;
+  padding: 50px;
+  text-align: left;
 }
 
 .logo-footer {
-    width: 220px;
-    height: 57px;
+  width: 220px;
+  height: 57px;
 }
 
 .footer-text {
-    font-family: default;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    color: #030A1B;
+  font-family: default;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #030a1b;
 }
 
 .social img {
-    padding: 25px 10px 0px 0px;
+  padding: 25px 10px 0px 0px;
 }
 
 .more {
-    margin-top: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: calc(100vw - 250px);
-    gap: 10px;
-    text-align: left;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: calc(100vw - 250px);
+  gap: 10px;
+  text-align: left;
 }
 
 .About ul,
 .Products ul,
 .Address ul {
-    list-style: none;
-    font-family: default;
-    font-size: 16px;
-    font-weight: 350;
-    line-height: 17px;
-    letter-spacing: 0em;
-    display: block;
-    text-align: left;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  font-family: default;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 17px;
+  letter-spacing: 0em;
+  display: block;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .About h2,
 .Products h2,
 .Address h2 {
-    font-family: default;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 33px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #030A1B;
-    height: 33px;
+  font-family: default;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #030a1b;
+  height: 33px;
 }
 
-
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
