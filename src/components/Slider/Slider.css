@@ -5,12 +5,16 @@
 
 .card-comment {
   padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .person-name-job {
   display: block;
   flex-direction: row;
   margin-left: 2%;
+  text-align: left;
 }
 
 .pre-slider-cont {
@@ -38,4 +42,14 @@
 .person-img {
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.name-comment{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.job-comment{
+  font-size: 16px;
+  font-weight: 400;
 }

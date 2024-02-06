@@ -49,8 +49,8 @@ const Slider1 = (props) => {
               <img src={slider[0].img} alt="" />
             </div>
             <div className="person-name-job">
-              <h2>{slider[0].name}</h2>
-              <h4>{slider[0].job}</h4>
+              <h2 className="name-comment">{slider[0].name}</h2>
+              <h4 className="job-comment">{slider[0].job}</h4>
             </div>
           </div>
           <div className="card-comment">{slider[0].comment}</div>
@@ -61,8 +61,8 @@ const Slider1 = (props) => {
               <img src={slider[1].img} alt="" />
             </div>
             <div className="person-name-job">
-              <h2>{slider[1].name}</h2>
-              <h4>{slider[1].job}</h4>
+              <h2 className="name-comment">{slider[1].name}</h2>
+              <h4 className="job-comment">{slider[1].job}</h4>
             </div>
           </div>
           <div className="card-comment">{slider[1].comment}</div>
@@ -73,8 +73,8 @@ const Slider1 = (props) => {
               <img src={slider[2].img} alt="" />
             </div>
             <div className="person-name-job">
-              <h2>{slider[2].name}</h2>
-              <h4>{slider[2].job}</h4>
+              <h2 className="name-comment">{slider[2].name}</h2>
+              <h4 className="job-comment">{slider[2].job}</h4>
             </div>
           </div>
           <div className="card-comment">{slider[2].comment}</div>
@@ -85,8 +85,8 @@ const Slider1 = (props) => {
               <img src={slider[3].img} alt="" />
             </div>
             <div className="person-name-job">
-              <h2>{slider[3].name}</h2>
-              <h4>{slider[3].job}</h4>
+              <h2 className="name-comment">{slider[3].name}</h2>
+              <h4 className="job-comment">{slider[3].job}</h4>
             </div>
           </div>
           <div className="card-comment">{slider[3].comment}</div>
@@ -97,8 +97,8 @@ const Slider1 = (props) => {
               <img src={slider[4].img} alt="" />
             </div>
             <div className="person-name-job">
-              <h2>{slider[4].name}</h2>
-              <h4>{slider[4].job}</h4>
+              <h2 className="name-comment">{slider[4].name}</h2>
+              <h4 className="job-comment">{slider[4].job}</h4>
             </div>
           </div>
           <div className="card-comment">{slider[4].comment}</div>
@@ -109,8 +109,8 @@ const Slider1 = (props) => {
               <img src={slider[5].img} alt="" />
             </div>
             <div className="person-name-job">
-              <h2>{slider[5].name}</h2>
-              <h4>{slider[5].job}</h4>
+              <h2 className="name-comment">{slider[5].name}</h2>
+              <h4 className="job-comment">{slider[5].job}</h4>
             </div>
           </div>
           <div className="card-comment">{slider[5].comment}</div>

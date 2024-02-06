@@ -9,8 +9,8 @@ import "./Main.css";
 import { partners } from "../../components/Partners/Partners";
 import Rectangle from "../../assets/Rectangle.png";
 import Comments from "../../components/Comments/Commenst";
-import Slider from "../../components/Slider/Slider";
 import { motion } from "framer-motion";
+import Slider1 from "../../components/Slider/Slider";
 
 const Main = () => {
   const [data, setData] = useState([]);
@@ -93,7 +93,7 @@ const Main = () => {
           </div>
           <div>
             <Comments />
-            <Slider />
+            <Slider1 />
           </div>
         </div>
       )}
