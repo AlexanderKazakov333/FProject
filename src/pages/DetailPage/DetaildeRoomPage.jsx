@@ -1,4 +1,7 @@
 import React from "react";
+import Alert from "@mui/material/Alert";
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 import Swiper from "../../components/Swiper/Swiper";
 import { useParams } from "react-router-dom";
 import { getOneFlat } from "../../URL/getOneFlat";
@@ -10,6 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 const DetaildeRoomPage = () => {
   const { id } = useParams();
   const [data, setData] = useState({});
+  const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -19,14 +23,13 @@ const DetaildeRoomPage = () => {
         const response = await getOneFlat(id);
         setData(response.data);
       } catch (e) {
-        console.log(e);
+        setError(true);
+        setData({});
       } finally {
         setIsLoading(false);
       }
     })();
   }, []);
-
-  console.log(data);
 
   const Notify = () => {
     toast("Гена Генадьевич Генадьев Телефон: 666-66-66-66", {
@@ -36,9 +39,20 @@ const DetaildeRoomPage = () => {
 
   return (
     <div>
+      {error && (
+        <div className="error-div">
+          <Alert className="alert" variant="filled" severity="error">
+            Не получилось загрузить данные, повторите попытку позже!
+          </Alert>
+        </div>
+      )}
       <ToastContainer />
       {isLoading ? (
-        <div>Loading...</div>
+        <div className="loading">
+          <Box sx={{ display: "flex" }}>
+            <CircularProgress className="loading" />
+          </Box>
+        </div>
       ) : (
         <div className="detailed-text-photo">
           <div className="detailed-photo">

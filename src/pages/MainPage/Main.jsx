@@ -1,5 +1,7 @@
 import React from "react";
 import Alert from "@mui/material/Alert";
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 import { useEffect, useState } from "react";
 import { getFlats } from "../../URL/getFlats";
 import Card from "../../components/Card/Card";
@@ -13,22 +15,23 @@ import Slider from "../../components/Slider/Slider";
 const Main = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
-  console.log(data);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     (async () => {
+      setIsLoading(true);
       try {
         const response = await getFlats();
         setData(response.data.results);
       } catch (e) {
-        console.log(e);
         setError(true);
       } finally {
+        setIsLoading(false);
       }
     })();
   }, []);
   return (
-    <div>
+    <div className="Main">
       {error && (
         <div className="error-div">
           <Alert className="alert" variant="filled" severity="error">
@@ -36,39 +39,50 @@ const Main = () => {
           </Alert>
         </div>
       )}
-      <div className="big-picture">
-        <div className="big-text-div">
-          <h1 className="big-text">
-            Find the perfect place to stay with your family
-          </h1>
+
+      {isLoading ? (
+        <div className="loading" >
+          <Box sx={{ display: "flex" }}>
+            <CircularProgress />
+          </Box>
         </div>
+      ) : (
         <div>
-          <img src={Rectangle} alt="" />
-        </div>
-      </div>
-
-      <div className="part">
-        <h1 className="our-partners">Our partners</h1>
-        <div className="partners">
-          {partners.map((item, idx) => (
-            <div key={idx}>
-              <img src={item.scr} alt="" />
+          <div className="big-picture">
+            <div className="big-text-div">
+              <h1 className="big-text">
+                Find the perfect place to stay with your family
+              </h1>
             </div>
-          ))}
+            <div>
+              <img src={Rectangle} alt="" />
+            </div>
+          </div>
+
+          <div className="part">
+            <h1 className="our-partners">Our partners</h1>
+            <div className="partners">
+              {partners.map((item, idx) => (
+                <div key={idx}>
+                  <img src={item.scr} alt="" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <h1 className="popular-prop">Popular Properties</h1>
+
+          <div className="card-grid">
+            {data.map((item, idx) => {
+              return <Card key={idx} item={item} />;
+            })}
+          </div>
+          <div>
+            <Comments />
+            <Slider />
+          </div>
         </div>
-      </div>
-
-      <h1 className="popular-prop">Popular Properties</h1>
-
-      <div className="card-grid">
-        {data.map((item, idx) => {
-          return <Card key={idx} item={item} />;
-        })}
-      </div>
-      <div>
-        <Comments />
-        <Slider />
-      </div>
+      )}
     </div>
   );
 };
