@@ -5,7 +5,6 @@
 .detailed-text{
     width: 50%;
     text-align: left;
-    line-height: 2;
     margin-left: 20px;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .image-gallery-slide.image-gallery-center{
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(238, 238, 238);
     border-radius: 10px;
 }
 
@@ -33,6 +32,13 @@
 }
 
 .other-about{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 2.3;
+
+}
+
+.other-about-descript{
     font-size: 24px;
     font-weight: 400;
 }

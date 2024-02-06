@@ -27,10 +27,10 @@ const Footer = () => {
           <div className='About'>
             <h2>About</h2>
             <ul>
-            <li>Company</li>
-            <li>Team</li>
-            <li>Career</li>
-            <li>Blogs</li>
+            <li><a href="">Company</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Blogs</a></li>
               
             </ul>
           </div>
@@ -38,20 +38,20 @@ const Footer = () => {
           <div className='Products'>
             <h2>Products</h2>
             <ul>
-              <li>E-Books</li>
-              <li>Preasantation</li>
-              <li>Management</li>
-              <li>Dashboard</li>
+              <li><a href="">E-Books</a></li>
+              <li><a href="">Preasantation</a></li>
+              <li><a href="">Management</a></li>
+              <li><a href="">Dashboard</a></li>
             </ul>
           </div>
 
           <div className='Address'>
             <h2>Address</h2>
             <ul>
-              <li>Country Delevery</li>
-              <li>Counter Beach Post</li>
-              <li>www.itobd.com</li>
-              <li>+880176565655</li>
+              <li><a href="">Country Delevery</a></li>
+              <li><a href="">Counter Beach Post</a></li>
+              <li><a href="">www.itobd.com</a></li>
+              <li><a href="">+880176565655</a></li>
             </ul>
           </div>
         </div>

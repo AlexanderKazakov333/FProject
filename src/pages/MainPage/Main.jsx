@@ -1,32 +1,41 @@
 import React from "react";
+import Alert from "@mui/material/Alert";
 import { useEffect, useState } from "react";
-import { baseURL } from "../../BaseURL/BaseURL";
+import { getFlats } from "../../URL/getFlats";
 import Card from "../../components/Card/Card";
 import "./Main.css";
 import { partners } from "../../components/Partners/Partners";
 import { slider } from "../../components/Slider/SliderArray";
 import Rectangle from "../../assets/Rectangle.png";
-import Comments from "../../components/Comments/Commenst"
+import Comments from "../../components/Comments/Commenst";
 import Slider from "../../components/Slider/Slider";
 
 const Main = () => {
   const [data, setData] = useState([]);
+  const [error, setError] = useState(false);
   console.log(data);
 
   useEffect(() => {
     (async () => {
       try {
-        const response = await baseURL();
+        const response = await getFlats();
         setData(response.data.results);
       } catch (e) {
         console.log(e);
+        setError(true);
       } finally {
       }
     })();
   }, []);
   return (
-
     <div>
+      {error && (
+        <div className="error-div">
+          <Alert className="alert" variant="filled" severity="error">
+            Не получилось загрузить данные, повторите попытку позже!
+          </Alert>
+        </div>
+      )}
       <div className="big-picture">
         <div className="big-text-div">
           <h1 className="big-text">
@@ -34,7 +43,7 @@ const Main = () => {
           </h1>
         </div>
         <div>
-        <img src={Rectangle} alt="" />
+          <img src={Rectangle} alt="" />
         </div>
       </div>
 

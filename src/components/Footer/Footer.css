@@ -17,7 +17,7 @@
 }
 
 .footer-text {
-    font-family: DM Sans;
+    font-family: default;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -43,13 +43,13 @@
 .Products ul,
 .Address ul {
     list-style: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: default;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 350;
     line-height: 17px;
     letter-spacing: 0em;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 0;
     margin: 0;
 }
@@ -57,13 +57,18 @@
 .About h2,
 .Products h2,
 .Address h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: default;
     font-size: 22px;
     font-weight: 600;
     line-height: 33px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     color: #030A1B;
-    /* width: 68px; */
     height: 33px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
 }
