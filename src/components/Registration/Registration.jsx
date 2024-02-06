@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./Registration.css";
+import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
   const {
@@ -12,6 +13,11 @@ const Homepage = () => {
   } = useForm({ mode: "onChange" });
 
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
+
+  const Back = () => {
+    navigate("/")
+  }
 
   const Submit = async (data) => {
     try {
@@ -63,6 +69,7 @@ const Homepage = () => {
           <h3>Неверный логин или пароль!</h3>
         </div>
       )}
+      <button className="back-btn" onClick={Back}>Назад</button>
     </div>
   );
 };

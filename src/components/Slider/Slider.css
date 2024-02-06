@@ -10,6 +10,7 @@
 .person-name-job {
   display: block;
   flex-direction: row;
+  margin-left: 2%;
 }
 
 .pre-slider-cont {
