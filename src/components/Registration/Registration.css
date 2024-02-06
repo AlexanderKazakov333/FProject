@@ -1,0 +1,43 @@
+.pre-form {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  width: 300px;
+  height: 40px;
+  border-radius: 7px;
+  margin: 10px auto;
+}
+
+.form button {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  margin: 10px auto;
+  background: rgba(46, 110, 255, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.1s linear;
+}
+
+.form button:hover {
+  background: rgb(3, 79, 255);
+}
+
+.info {
+  margin-top: 30px;
+  border: 1px white solid;
+  border-radius: 5px;
+  font-size: 30px;
+}

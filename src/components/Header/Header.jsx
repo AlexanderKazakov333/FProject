@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
@@ -10,6 +10,9 @@ const Header = () => {
   };
   const pageAboutUs = () => {
     navigate("/aboutUs");
+  };
+  const AddFlat = () => {
+    navigate("/registration");
   };
 
   return (
@@ -28,7 +31,7 @@ const Header = () => {
             About Us
           </li>
         </ul>
-        <button className="btn1">+ Добавить обьявление</button>
+        <button onClick={AddFlat} className="btn1">+ Добавить обьявление</button>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import DetaildeRoomPage from "./pages/DetailPage/DetaildeRoomPage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Registration from "./components/Registration/Registration";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" element={<Main />} />
         <Route exact path="/aboutUs" element={<AboutUsPage />} />
         <Route exact path="/:id" element={<DetaildeRoomPage />} />
+        <Route exact path="/registration" element={<Registration />} />
       </Routes>
       <Footer />
     </div>

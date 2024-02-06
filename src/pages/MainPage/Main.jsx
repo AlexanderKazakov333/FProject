@@ -7,7 +7,6 @@ import { getFlats } from "../../URL/getFlats";
 import Card from "../../components/Card/Card";
 import "./Main.css";
 import { partners } from "../../components/Partners/Partners";
-import { slider } from "../../components/Slider/SliderArray";
 import Rectangle from "../../assets/Rectangle.png";
 import Comments from "../../components/Comments/Commenst";
 import Slider from "../../components/Slider/Slider";
@@ -17,6 +16,7 @@ const Main = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
 
   useEffect(() => {
     (async () => {
@@ -31,6 +31,8 @@ const Main = () => {
       }
     })();
   }, []);
+
+
 
   return (
     <div className="Main">
@@ -69,7 +71,7 @@ const Main = () => {
             </motion.div>
           </div>
 
-          <motion.div />
+          <div />
 
           <div className="part">
             <h1 className="our-partners">Our partners</h1>
