@@ -31,6 +31,11 @@ body {
   background: rgba(46, 110, 255, 1);
   font-size: 16px;
   font-weight: 500;
+  transition: 0.1s linear;
+}
+
+.btn1:hover{
+  background: rgb(3, 79, 255);
 }
 
 .li1 {
@@ -48,3 +53,6 @@ body {
 .li:hover {
   color: rgba(254, 117, 63, 1);
 }
+
+
+
