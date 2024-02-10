@@ -2,6 +2,8 @@ import React from "react";
 import "./Card.css";
 import { useNavigate } from "react-router-dom";
 import Vector from "../../assets/Vector.png";
+import { motion } from "framer-motion";
+
 
 const Card = (props) => {
   const { item } = props;
@@ -12,7 +14,12 @@ const Card = (props) => {
   };
 
   return (
-    <div className="card">
+    <motion.div className="card"
+    initial={{opacity:0, y:20}}
+    whileInView={{opacity: 1, y:0}}
+    viewport={{once: true}}
+    transition={{type: 'spring', stiffness: 100}}
+    >
       <div className="photo">
         <img className="underphoto" src={item.flat_images[0].image} alt="" />
       </div>
@@ -44,7 +51,7 @@ const Card = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

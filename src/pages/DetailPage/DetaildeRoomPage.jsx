@@ -32,7 +32,12 @@ const DetaildeRoomPage = () => {
   }, []);
 
   const Notify = () => {
-    toast("Гена Генадьевич Генадьев Телефон: 666-66-66-66", {
+    toast(
+    <>
+      <div>{data.realtor?.FIO}</div>
+      <div>Телефон: 0{data.realtor?.phone}</div>
+    </>
+      , {
       position: "bottom-right",
     });
   };
